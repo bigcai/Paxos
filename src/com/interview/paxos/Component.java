@@ -2,7 +2,10 @@ package com.interview.paxos;
 
 import com.interview.paxos.message.SourceDestination;
 
-
+/**
+ * 基本组件接口：
+ *  接收消息的接口
+ */
 public interface Component {
 
 
