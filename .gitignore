@@ -1,0 +1,11 @@
+#屏蔽当前目录下的所有文件
+/*
+#追踪目录/文件
+!libs
+!src
+!/*.gitignore
+!/*.classpath
+!/*.project
+!build.gradle
+!README.org
+
