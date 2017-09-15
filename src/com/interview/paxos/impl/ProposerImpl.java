@@ -105,6 +105,8 @@ public class ProposerImpl implements Proposer {
     @Override
     public synchronized void receivePrepare(PrepareResponse r) {
 //      System.out.println("Proposer Received response " + r + " " + currentProposalNumber.get());
+
+        /** 因为发送数据的时候，会记录下，发送出去的最新数据，如果收到的是旧数据，那么忽略它，不做任何作为 */
         if(currentProposalNumber.get() != r.getProposalNumberInPrepare()){
 //          System.out.println("Proposer Rejecting response from older request " + r);
             return;
