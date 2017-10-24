@@ -1,22 +1,13 @@
 package com.interview.paxos.impl;
 
+import com.interview.paxos.*;
+import com.interview.paxos.message.*;
+
 import java.util.HashSet;
 import java.util.Set;
-import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicReference;
-
-import com.interview.paxos.Component;
-import com.interview.paxos.ComponentType;
-import com.interview.paxos.Message;
-import com.interview.paxos.NetworkDelivery;
-import com.interview.paxos.Proposer;
-import com.interview.paxos.message.AcceptRequest;
-import com.interview.paxos.message.MessageType;
-import com.interview.paxos.message.PrepareRequest;
-import com.interview.paxos.message.PrepareResponse;
-import com.interview.paxos.message.SourceDestination;
 
 public class ProposerImpl implements Proposer {
 
